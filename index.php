@@ -12,11 +12,15 @@ session_start();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-    <h1><a href="index.php" style="text-decoration: none; color: inherit; background: none;">Bibliothèque</a></h1>
+    <h1><a href="index.php" style="text-decoration: none; color: inherit; background: none; border: none;">Bibliothèque</a></h1>
         <nav>
+            <a href="mention_legal.html" id="mention-link">Mentions Légales</a>
             <?php if (isset($_SESSION['username'])): ?>
                 <a href="compte.php" id="account-link">Compte</a>
                 <a href="favoris.php" id="favoris-link">Mes favoris</a>
